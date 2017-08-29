@@ -14,7 +14,7 @@ within Red Hat, along with numerous other upstream contributors, have
 brought the [OSTree](https://ostree.readthedocs.io/en/latest/manual/introduction/)
 and [RPM-OSTree](https://rpm-ostree.readthedocs.io/en/latest/)
 technology a long way. At the Fedora user and contributor conference (known as 
-[Flock](https://rpm-ostree.readthedocs.io/en/latest/)) this week we will be
+[Flock](https://flocktofedora.org/)) this week we will be
 giving a [lab on Atomic Host](https://flock2017.sched.com/event/Bm97/atomic-host-101)
 designed to let new users learn about
 Atomic Host. The audience for this lab is anyone familiar with Linux
@@ -73,7 +73,6 @@ Bringing machine 'default' up with 'libvirt' provider...
 ...
 $ vagrant ssh
 [vagrant@localhost ~]$
-[vagrant@localhost ~]$
 [vagrant@localhost ~]$ sudo su -
 [root@localhost ~]# grep PRETTY_NAME /etc/os-release
 PRETTY_NAME="Fedora 26 (Atomic Host)"
@@ -93,7 +92,7 @@ For this lab we are going to be adding some files to the root
 filesystem and also rebasing to other OSTrees. Let's add a significant
 amount of space to the root filesystem to accommodate this:
 
-```
+```nohighlight
 [root@localhost ~]# lvresize --resizefs --size=+10G /dev/atomicos/root
   Size of logical volume atomicos/root changed from 2.93 GiB (750 extents) to 12.93 GiB (3310 extents).
   Logical volume atomicos/root successfully resized.
