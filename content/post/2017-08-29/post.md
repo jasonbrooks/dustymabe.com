@@ -1,5 +1,5 @@
 ---
-title: 'Fedora Flock Atomic Host 101 Lab Part 0: Preparation'
+title: 'Atomic Host 101 Lab Part 0: Preparation'
 author: dustymabe
 date: 2017-08-29
 tags: [ fedora, atomic ]
