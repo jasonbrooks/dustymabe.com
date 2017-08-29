@@ -116,7 +116,7 @@ file into the `/srv/localweb` directory on the running atomic host:
 
 ```nohighlight
 [root@localhost ~]# mkdir /srv/localweb && chmod 777 /srv/localweb
-[root@localhost ~]# cd /src/localweb
+[root@localhost ~]# cd /srv/localweb
 [root@localhost localweb]# curl -O https://s3.amazonaws.com/atomic-host-lab/atomic-host-lab.tar.gz
 ...
 [root@localhost localweb]# tar -xf atomic-host-lab.tar.gz
@@ -168,7 +168,7 @@ hello world
 
 # Configure OSTree/YUM Repositories
 
-Our local webservice is now running and actually hosting files that
+Our local webservice is now running and hosting files that
 are a front for an OSTree repository as well as a YUM repository.
 Let's remove the old remote from the system and configure it so
 that `ostree` pulls from that local server:
@@ -180,7 +180,7 @@ that `ostree` pulls from that local server:
 ```
 
 Let's take it one step farther and tell the current deployment
-on the system to trcak the `fedora/26/x86_64/updates/atomic-host` 
+on the system to track the `fedora/26/x86_64/updates/atomic-host` 
 ref from the `local` remote.
 
 ```nohighlight
