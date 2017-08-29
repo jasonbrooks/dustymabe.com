@@ -42,7 +42,7 @@ recommended you start from the `26.110` (`13ed0f2`) release. The
 corresponding media that was built from that release was part of
 the `26-20170821.0` compose. You can spin up this release by booting 
 in AWS or by spinning up a vagrant box or cloud image. Information on
-AMIs or links to downloads can be found [here](content/post/2017-08-29/imageinfo.txt).
+AMIs or links to downloads can be found [here](2017-08-29/imageinfo.txt).
 
 For demonstration purposes I'll be using the libvirt vagrant box. If
 you are on Fedora please see the [Fedora Developer Portal](https://developer.fedoraproject.org/tools/vagrant/about.html)
@@ -53,7 +53,7 @@ After downloading the libvirt vagrant box
 we can now add the box to Vagrant: 
 
 ```nohighlight
-[user@laptop ~]#$ vagrant box add --name F26AHLab ./Fedora-Atomic-Vagrant-26-20170821.0.x86_64.vagrant-libvirt.box
+$ vagrant box add --name F26AHLab ./Fedora-Atomic-Vagrant-26-20170821.0.x86_64.vagrant-libvirt.box
 ==> box: Box file was not detected as metadata. Adding it directly...
 ==> box: Adding box 'F26AHLab' (v0) for provider:
     box: Unpacking necessary files from: file:///path/Fedora-Atomic-Vagrant-26-20170821.0.x86_64.vagrant-libvirt.box
@@ -62,7 +62,7 @@ we can now add the box to Vagrant:
 
 I can now bring up and ssh into the Atomic Host:
 
-```
+```nohighlight
 $ mkdir atomic && cd atomic && vagrant init F26AHLab && vagrant up
 A `Vagrantfile` has been placed in this directory. You are now
 ready to `vagrant up` your first virtual environment! Please read
