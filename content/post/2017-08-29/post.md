@@ -42,7 +42,7 @@ recommended you start from the `26.110` (`13ed0f2`) release. The
 corresponding media that was built from that release was part of
 the `26-20170821.0` compose. You can spin up this release by booting 
 in AWS or by spinning up a vagrant box or cloud image. Information on
-AMIs or links to downloads can be found [here](2017-08-29/imageinfo.txt).
+AMIs or links to downloads can be found [here](/2017-08-29/imageinfo.txt).
 
 For demonstration purposes I'll be using the libvirt vagrant box. If
 you are on Fedora please see the [Fedora Developer Portal](https://developer.fedoraproject.org/tools/vagrant/about.html)
